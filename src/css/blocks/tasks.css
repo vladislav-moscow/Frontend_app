@@ -1,0 +1,235 @@
+.cards {
+  padding: 3rem 0;
+}
+
+.card-wrapper {
+  min-height: 48rem;
+  position: relative;
+  display: inline-flex;
+  margin-bottom: 2.4rem;
+  transition: 0.5s;
+  flex-basis: 24%;
+  min-width: 24%;
+  max-width: 100%;
+  box-shadow: 0 0 16px 6px var(--bacgroun-card-shadow);
+}
+
+.swiper-wrapper {
+  height: auto;
+}
+
+.card-wrapper:focus {
+  outline: none;
+  border: 0;
+}
+
+.card {
+  width: 100%;
+  background-color: var(--cds-theme-bgc);
+  color: var(--title-color);
+}
+
+.card__img {
+  width: 100%;
+  /* явно растягиваем по ширине родителя */
+  max-width: 100%;
+  height: 24rem;
+  /* убираем зазор снизу */
+  object-fit: cover;
+  transition: 1.2s;
+}
+
+.card-wrapper:hover {
+  background-color: var(--bacgroun-card-hover);
+}
+
+.card-link {
+  display: block;
+  height: 100%;
+  max-width: 100%;
+  width: 100%;
+  position: absolute;
+  background: transparent;
+  z-index: 1;
+}
+
+.card-link:focus {
+  border-color: transparent;
+}
+
+.card-heart {
+  display: inline-flex;
+  fill: rgba(0, 0, 0, 0.5);
+  height: 2.4rem;
+  width: 2.4rem;
+  stroke: #ffffff;
+  stroke-width: 1.4;
+  vertical-align: middle;
+  position: absolute;
+  /* перекрытие кликабельной ссылки на карточке */
+  z-index: 2;
+  top: 1.8rem;
+  right: 1.8rem;
+  cursor: pointer;
+}
+
+.heart-active {
+  fill: #da1e28;
+}
+
+.card-host {
+  padding: 0.4rem 0.8rem;
+  position: absolute;
+  top: 1.8rem;
+  left: 1.8rem;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.card-text {
+  padding: 1.6rem 1.6rem 0 1.6rem;
+}
+
+.card-text__title,
+.card-text__rating {
+  font-size: 1.5rem;
+  margin-bottom: 0.8rem;
+  font-weight: 500;
+}
+
+.card-text__title {
+  white-space: nowrap;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+  max-width: 16rem;
+  font-size: 1.8rem;
+}
+
+.card-text__rating svg {
+  margin-right: 0.4rem;
+}
+
+.card-text__rating svg path {
+  fill: var(--rating-color);
+}
+
+.text-secondary {
+  font-size: 1.4rem;
+  font-weight: 400;
+  margin-bottom: 0.8rem;
+  color: var(--text-color-card);
+}
+
+.card-text__descr {
+  display: block;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card-text__price {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 65%;
+}
+
+.price-prev {
+  margin-right: 10%;
+  text-decoration: line-through;
+  font-weight: 600;
+}
+
+.price-current {
+  font-weight: 600;
+  position: relative;
+  margin-right: 8%;
+}
+
+.km,
+.date {
+  color: var(--cds-grey-400);
+  font-size: 1.2rem;
+  line-height: 14px;
+}
+
+.night {
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.card-bottom {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  min-height: 4.8rem;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.card-bottom [data-variant="primary"] {
+  flex: 1;
+  max-height: 100%;
+}
+
+/* адаптив */
+@media screen and (max-width: 1220px) {
+  .card-wrapper {
+    flex-basis: 32.5%;
+    max-width: 32.5%;
+  }
+}
+
+@media screen and (max-width: 968px) {
+  .card-wrapper {
+    flex-basis: 49.5%;
+    max-width: 49.5%;
+    margin-bottom: 0.6rem;
+  }
+
+  .card-image {
+    min-height: 26rem;
+  }
+
+  .card img {
+    height: 26rem;
+  }
+
+  .card-text__price {
+    width: 50%;
+  }
+
+  .text-secondary,
+  .km,
+  .date {
+    font-size: 1.6rem;
+  }
+}
+
+@media screen and (max-width: 663px) {
+  .card-wrapper {
+    flex-basis: 100%;
+    min-height: 46rem;
+    margin-bottom: 1.4rem;
+    max-width: 100%;
+  }
+
+  .card-image {
+    min-height: 24rem;
+  }
+
+  .card img {
+    height: 24rem;
+  }
+
+  .card-bottom {
+    min-height: 4.8rem;
+  }
+
+  .card-bottom [data-btn="primary"] {
+    max-width: 100%;
+  }
+}
