@@ -1,6 +1,7 @@
 :root {
   /* общий фон */
   --body-color: #ffffff;
+	--body-color-task:#ffffff;
   /* цвет заголовков */
   --title-color: #161616;
   /* цвет подзаголовков */
@@ -19,6 +20,11 @@
   --background-background-hover: #e5e5e5;
   --bacgroun-card-hover: rgba(234, 234, 234, 0.9);
   --bacgroun-card-shadow: rgba(34, 60, 80, 0.1);
+	--container-color-task: #fff;
+	--first-color-task: #3e6553;
+  --first-color-alt-task: #365949;
+  --first-color-light-task: #93bdaa;
+  --first-color-lighten-task: #e6efeb;
 
   /* Text */
   --text-text-primary: #161616;
@@ -28,6 +34,8 @@
   --text-text-disabled: #c6c6c6;
   --rating-color: #f0ca08;
   --text-color-card: #161616;
+	--text-color-task: #565d59;
+  --text-color-light-task: #88918d;
 
   /* Link */
   --link-link-primary: #0f62fe;
