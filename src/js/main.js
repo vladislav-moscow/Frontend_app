@@ -27,7 +27,6 @@ window.addEventListener("scroll", scrollHeader);
 
 function scrollActive() {
   const scrollY = window.scrollY;
-
   sections.forEach((current) => {
     const sectionHeight = current.offsetHeight,
       sectionTop = current.offsetTop - 58,
