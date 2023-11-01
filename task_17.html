@@ -1,0 +1,524 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/css/blocks/task17.css" />
+    <title>website</title>
+    <meta
+      name="theme-color"
+      media="(prefers-color-scheme: light)"
+      content="hsl(0 0% 100%)"
+    />
+    <meta
+      name="theme-color"
+      media="(prefers-color-scheme: dark)"
+      content="hsl(0 0% 100%)"
+    />
+    <link
+      rel="stylesheet"
+      href="src/css/light.css"
+      media="(prefers-color-scheme: light)"
+    />
+    <link
+      rel="stylesheet"
+      href="src/css/dark.css"
+      media="(prefers-color-scheme: dark)"
+    />
+  </head>
+  <body>
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#" class="nav__logo">
+          <i class="ri-leaf-line nav__logo-icon"></i> Green
+        </a>
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link active-link">Главная</a>
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link">О нас</a>
+            </li>
+            <li class="nav__item">
+              <a href="#products" class="nav__link">Товары</a>
+            </li>
+            <li class="nav__item">
+              <a href="#faqs" class="nav__link">Вопросы</a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">Контакты</a>
+            </li>
+          </ul>
+          <div class="nav__close" id="nav-close">
+            <i class="ri-close-line"></i>
+          </div>
+        </div>
+        <div class="nav__btns">
+          <fieldset class="switcher">
+            <input type="checkbox" class="switch" />
+            <label for="s2"></label>
+          </fieldset>
+          <div class="nav__toggle" id="nav-toggle">
+            <i class="ri-menu-line"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="main">
+      <section class="home" id="home">
+        <div class="home__container container grid">
+          <img
+            src="./src/images/task17/home.png"
+            alt="cactus"
+            class="home__img"
+          />
+          <div class="home__data">
+            <h1 class="home__title">
+              Растения сделают <br />
+              вашу жизнь лучше
+            </h1>
+            <p class="home__description">
+              Создайте невероятный дизайн растений для ваших офисов или квартир.
+              Добавьте свежести вашим новым идеям.
+            </p>
+            <a href="#about" class="button button--flex">
+              Узнать <i class="ri-arrow-right-down-line button__icon"></i>
+            </a>
+          </div>
+          <div class="home__social">
+            <span class="home__social-follow">Подпишись</span>
+            <div class="home__social-links">
+              <a
+                href="https://www.facebook.com/"
+                target="_blank"
+                class="home__social-link"
+              >
+                <i class="ri-facebook-fill"></i>
+              </a>
+              <a
+                href="https://www.instagram.com/"
+                target="_blank"
+                class="home__social-link"
+              >
+                <i class="ri-instagram-line"></i>
+              </a>
+              <a
+                href="https://twitter.com/"
+                target="_blank"
+                class="home__social-link"
+              >
+                <i class="ri-twitter-fill"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="about section container" id="about">
+        <div class="about__container grid">
+          <img
+            src="./src/images/task17/about.png"
+            alt="О нас"
+            class="about__img"
+          />
+          <div class="about__data">
+            <h2 class="section__title about__title">
+              Почему доверяют нам & <br />
+              почему именно мы
+            </h2>
+            <p class="about__description">
+              У нас более 4000 непредвзятых отзывов и наши клиенты доверяют
+              нашим производственным процессам и службе доставки
+            </p>
+            <div class="about__details">
+              <p class="about__details-description">
+                <i class="ri-checkbox-fill about__details-icon"></i>
+                Мы всегда доставляем товар вовремя.
+              </p>
+              <p class="about__details-description">
+                <i class="ri-checkbox-fill about__details-icon"></i>
+                Мы даем вам рекомендации по защите ваших растений и уходу за
+                ними.
+              </p>
+              <p class="about__details-description">
+                <i class="ri-checkbox-fill about__details-icon"></i>
+                Мы всегда приходим на проверку после продажи.
+              </p>
+              <p class="about__details-description">
+                <i class="ri-checkbox-fill about__details-icon"></i>
+                100% возврат денег гарантирован.
+              </p>
+            </div>
+            <a href="#" class="button--link button--flex button">
+              Купить сейчас
+              <i class="ri-arrow-right-down-line button__icon"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+      <!--==================== STEPS ====================-->
+      <section class="steps section container">
+        <div class="steps__bg">
+          <h2 class="section__title-center steps__title">
+            Шаги, чтобы правильно <br />
+            приобрести ваши растения
+          </h2>
+          <div class="steps__container grid">
+            <div class="steps__card">
+              <div class="steps__card-number">01</div>
+              <h3 class="steps__card-title">Выберите растение</h3>
+              <p class="steps__card-description">
+                У нас есть несколько сортов растений, из которых вы можете
+                выбрать.
+              </p>
+            </div>
+            <div class="steps__card">
+              <div class="steps__card-number">02</div>
+              <h3 class="steps__card-title">Оформить заказ</h3>
+              <p class="steps__card-description">
+                Как только ваш заказ оформлен, мы переходим к следующему шагу -
+                доставке.
+              </p>
+            </div>
+            <div class="steps__card">
+              <div class="steps__card-number">03</div>
+              <h3 class="steps__card-title">Доставка растений</h3>
+              <p class="steps__card-description">
+                Наш процесс доставки прост, вы получаете растение прямо к вашей
+                двери.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--==================== PRODUCTS ====================-->
+      <section class="product section container" id="products">
+        <h2 class="section__title-center">
+          Ознакомьтесь с нашими <br />
+          продуктами
+        </h2>
+        <p class="product__description">
+          Вот несколько отобранных растений из нашего выставочного зала, все они
+          находятся в отличном состоянии и имеют длительный срок службы.
+          Покупайте и наслаждайтесь лучшим качеством.
+        </p>
+        <div class="product__container grid">
+          <article class="product__card">
+            <div class="product__circle"></div>
+            <img
+              src="./src/images/task17/product1.png"
+              alt="cactus"
+              class="product__img"
+            />
+            <h3 class="product__title">Кактус бразильский</h3>
+            <span class="product__price">₽1200</span>
+            <button class="button--flex product__button">
+              <i class="ri-shopping-bag-line"></i>
+            </button>
+          </article>
+          <article class="product__card">
+            <div class="product__circle"></div>
+            <img
+              src="./src/images/task17/product2.png"
+              alt="cactus"
+              class="product__img"
+            />
+            <h3 class="product__title">Кактус мексиканский</h3>
+            <span class="product__price">₽1100</span>
+            <button class="button--flex product__button">
+              <i class="ri-shopping-bag-line"></i>
+            </button>
+          </article>
+          <article class="product__card">
+            <div class="product__circle"></div>
+            <img
+              src="./src/images/task17/product3.png"
+              alt="Aloe Vera"
+              class="product__img"
+            />
+            <h3 class="product__title">Алоэ вера обычная</h3>
+            <span class="product__price">₽800</span>
+            <button class="button--flex product__button">
+              <i class="ri-shopping-bag-line"></i>
+            </button>
+          </article>
+          <article class="product__card">
+            <div class="product__circle"></div>
+            <img
+              src="./src/images/task17/product4.png"
+              alt="Succulent"
+              class="product__img"
+            />
+            <h3 class="product__title">Суккуленты</h3>
+            <span class="product__price">₽599</span>
+            <button class="button--flex product__button">
+              <i class="ri-shopping-bag-line"></i>
+            </button>
+          </article>
+          <article class="product__card">
+            <div class="product__circle"></div>
+            <img
+              src="./src/images/task17/product5.png"
+              alt="Succulent"
+              class="product__img"
+            />
+            <h3 class="product__title">Суккуленты</h3>
+            <span class="product__price">₽1199</span>
+            <button class="button--flex product__button">
+              <i class="ri-shopping-bag-line"></i>
+            </button>
+          </article>
+          <article class="product__card">
+            <div class="product__circle"></div>
+            <img
+              src="./src/images/task17/product6.png"
+              alt="Green"
+              class="product__img"
+            />
+            <h3 class="product__title">Растение</h3>
+            <span class="product__price">₽999</span>
+            <button class="button--flex product__button">
+              <i class="ri-shopping-bag-line"></i>
+            </button>
+          </article>
+        </div>
+      </section>
+      <!--==================== QUESTIONS ====================-->
+      <section class="questions section" id="faqs">
+        <h2 class="section__title-center questions__title container">
+          Некоторые распространенные вопросы <br />
+          нас часто спрашивали
+        </h2>
+        <div class="questions__container container grid">
+          <div class="questions__group">
+            <div class="questions__item">
+              <header class="questions__header">
+                <i class="ri-add-line questions__icon"></i>
+                <h3 class="questions__item-title">
+                  Мои цветы опадают или увядают?
+                </h3>
+              </header>
+              <div class="questions__content">
+                <p class="questions__description">
+                  Растения - это простой способ добавить цветовой энергии и
+                  преобразить ваше пространство, но какая планета подходит
+                  именно вам? Правильный выбор растения.
+                </p>
+              </div>
+            </div>
+            <div class="questions__item">
+              <header class="questions__header">
+                <i class="ri-add-line questions__icon"></i>
+                <h3 class="questions__item-title">
+                  Что заставляет листья бледнеть?
+                </h3>
+              </header>
+              <div class="questions__content">
+                <p class="questions__description">
+                  Растения - это простой способ добавить цветовой энергии и
+                  преобразить ваше пространство, но какая планета подходит
+                  именно вам? Правильный выбор растения.
+                </p>
+              </div>
+            </div>
+            <div class="questions__item">
+              <header class="questions__header">
+                <i class="ri-add-line questions__icon"></i>
+                <h3 class="questions__item-title">
+                  Что вызывает потемнение хрустящих листьев?
+                </h3>
+              </header>
+              <div class="questions__content">
+                <p class="questions__description">
+                  Растения - это простой способ добавить цветовой энергии и
+                  преобразить ваше пространство, но какая планета подходит
+                  именно вам? Правильный выбор растения.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="questions__group">
+            <div class="questions__item">
+              <header class="questions__header">
+                <i class="ri-add-line questions__icon"></i>
+                <h3 class="questions__item-title">Как мне выбрать растение?</h3>
+              </header>
+              <div class="questions__content">
+                <p class="questions__description">
+                  Растения - это простой способ добавить цветовой энергии и
+                  преобразить ваше пространство, но какая планета подходит
+                  именно вам? Правильный выбор растения.
+                </p>
+              </div>
+            </div>
+            <div class="questions__item">
+              <header class="questions__header">
+                <i class="ri-add-line questions__icon"></i>
+                <h3 class="questions__item-title">Как мне поменять горшки?</h3>
+              </header>
+              <div class="questions__content">
+                <p class="questions__description">
+                  Растения - это простой способ добавить цветовой энергии и
+                  преобразить ваше пространство, но какая планета подходит
+                  именно вам? Правильный выбор растения.
+                </p>
+              </div>
+            </div>
+            <div class="questions__item">
+              <header class="questions__header">
+                <i class="ri-add-line questions__icon"></i>
+                <h3 class="questions__item-title">
+                  Почему комары летают вокруг моего растения?
+                </h3>
+              </header>
+              <div class="questions__content">
+                <p class="questions__description">
+                  Растения - это простой способ добавить цветовой энергии и
+                  преобразить ваше пространство, но какая планета подходит
+                  именно вам? Правильный выбор растения.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--==================== CONTACT ====================-->
+      <section class="contact section container" id="contact">
+        <div class="contact__container grid">
+          <div class="contact__box">
+            <h2 class="section__title">
+              Свяжитесь с нами  <br />
+              сегодня через любой из<br/>
+							указанных вариантов
+            </h2>
+            <div class="contact__data">
+              <div class="contact__information">
+                <h3 class="contact__subtitle">
+                  Позвоните нам для получения мгновенной поддержки
+                </h3>
+                <span class="contact__description">
+                  <i class="ri-phone-line contact__icon"></i>
+                  +7 999 999 99 99
+                </span>
+              </div>
+              <div class="contact__information">
+                <h3 class="contact__subtitle">Напишите нам по почте</h3>
+                <span class="contact__description">
+                  <i class="ri-mail-line contact__icon"></i>
+                  user@email.com
+                </span>
+              </div>
+            </div>
+          </div>
+          <form action="" class="contact__form">
+            <div class="contact__inputs">
+              <div class="contact__content">
+                <input type="email" placeholder=" " class="contact__input" />
+                <label for="" class="contact__label">Email</label>
+              </div>
+              <div class="contact__content">
+                <input type="text" placeholder=" " class="contact__input" />
+                <label for="" class="contact__label">Subject</label>
+              </div>
+              <div class="contact__content contact__area">
+                <textarea
+                  name="message"
+                  placeholder=" "
+                  class="contact__input"
+                ></textarea>
+                <label for="" class="contact__label">Message</label>
+              </div>
+            </div>
+            <button class="button button--flex">
+              Отправить сообщение
+              <i class="ri-arrow-right-up-line button__icon"></i>
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <!--==================== FOOTER ====================-->
+    <footer class="footer section">
+      <div class="footer__container container grid">
+        <div class="footer__content">
+          <a href="#" class="footer__logo">
+            <i class="ri-leaf-line footer__logo-icon"></i> Green
+          </a>
+          <h3 class="footer__title">
+            Подпишитесь на нашу рассылку новостей 
+            чтобы оставаться в курсе событий
+          </h3>
+          <div class="footer__subscribe">
+            <input
+              type="email"
+              placeholder="Enter your email"
+              class="footer__input"
+            />
+            <button class="button button--flex footer__button">
+              Подписаться
+              <i class="ri-arrow-right-up-line button__icon"></i>
+            </button>
+          </div>
+        </div>
+        <div class="footer__content">
+          <h3 class="footer__title">Наш адрес</h3>
+          <ul class="footer__data">
+            <li class="footer__information">1234 - Россия</li>
+            <li class="footer__information">Москва, Тверская - 43</li>
+            <li class="footer__information">+7(999)999-99-99</li>
+          </ul>
+        </div>
+        <div class="footer__content">
+          <h3 class="footer__title">Связаться с нами</h3>
+          <ul class="footer__data">
+            <li class="footer__information">+7(999)999-99-99</li>
+            <div class="footer__social">
+              <a href="https://www.facebook.com/" class="footer__social-link">
+                <i class="ri-facebook-fill"></i>
+              </a>
+              <a href="https://www.instagram.com/" class="footer__social-link">
+                <i class="ri-instagram-line"></i>
+              </a>
+              <a href="https://twitter.com/" class="footer__social-link">
+                <i class="ri-twitter-fill"></i>
+              </a>
+            </div>
+          </ul>
+        </div>
+        <div class="footer__content">
+          <h3 class="footer__title">Мы принимаем все кредитные карты</h3>
+          <div class="footer__cards">
+            <img
+              src="./src/images/task17/card1.png"
+              alt="visa card"
+              class="footer__card"
+            />
+            <img
+              src="./src/images/task17/card2.png"
+              alt="master card"
+              class="footer__card"
+            />
+            <img
+              src="./src/images/task17/card3.png"
+              alt="PayPal card"
+              class="footer__card"
+            />
+            <img
+              src="./src/images/task17/mir.png"
+              alt="Mir card"
+              class="footer__card"
+            />
+          </div>
+        </div>
+      </div>
+      <p class="footer__copy">&#169; Все права защищены</p>
+    </footer>
+
+    <script src="src/js/theme-switcher.js"></script>
+    <script src="./src/js/main.js"></script>
+  </body>
+</html>
